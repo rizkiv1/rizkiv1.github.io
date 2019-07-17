@@ -1,3 +1,4 @@
+//ngecek IP pengguna
 var xhttp = new XMLHttpRequest();
 xhttp.open("GET", "https://ipecho.net/plain");
 xhttp.onload = function(){
@@ -5,6 +6,7 @@ xhttp.onload = function(){
 };
 xhttp.send();
 
+//ngecek IP
 var ipgeo = function(){
     var ipinput = document.getElementById("ipin").value;
     xhttp.open("GET", "https://reallyfreegeoip.org/json/"+ ipinput);
@@ -15,7 +17,7 @@ var ipgeo = function(){
     };
     xhttp.send();
 }
-
+//masukin ip dari IP pengguna yang dideteksi
 var cekip = function(){
     document.getElementById("ipin").value = document.getElementById("ipkomputer").innerHTML;
 }
