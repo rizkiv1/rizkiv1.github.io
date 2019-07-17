@@ -104,8 +104,9 @@ nav ul li:hover {
         border: 1px dotted;
     }
     .content {
-        margin: auto;
+        margin: 0px;
         padding: 0%;
+        padding-right: 10px;
     }
 
 }

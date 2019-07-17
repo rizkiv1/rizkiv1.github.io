@@ -1,5 +1,5 @@
 var xhttp = new XMLHttpRequest();
-xhttp.open("GET", "https://api.ipify.org");
+xhttp.open("GET", "https://ipecho.net/plain");
 xhttp.onload = function(){
     document.getElementById("ipkomputer").innerHTML = xhttp.responseText;
 };
