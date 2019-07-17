@@ -7,7 +7,7 @@ xhttp.send();
 
 var ipgeo = function(){
     var ipinput = document.getElementById("ipin").value;
-    xhttp.open("GET", "http://api.petabyet.com/geoip/"+ ipinput);
+    xhttp.open("GET", "https://api.ipgeolocationapi.com/geolocate"+ ipinput);
     xhttp.onload = function(){
         var parsed = JSON.parse(xhttp.responseText);
         document.getElementById("ipout").innerHTML = "";
