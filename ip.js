@@ -7,11 +7,11 @@ xhttp.send();
 
 var ipgeo = function(){
     var ipinput = document.getElementById("ipin").value;
-    xhttp.open("GET", "https://api.ipgeolocationapi.com/geolocate"+ ipinput);
+    xhttp.open("GET", "https://reallyfreegeoip.org/json/"+ ipinput);
     xhttp.onload = function(){
         var parsed = JSON.parse(xhttp.responseText);
         document.getElementById("ipout").innerHTML = "";
-        document.getElementById("ipout").innerHTML = "KODE : " + parsed.country_code + "<br>Negara : " + parsed.country + "<br>Region : " + parsed.region + "<br>Kota : " + parsed.city + "<br>Zona Waktu : " + parsed.timezone + "<br>Provider : " + parsed.organization;
+        document.getElementById("ipout").innerHTML = "KODE : " + parsed.country_code + "<br>Negara : " + parsed.country_name + "<br>Region : " + parsed.region_name + "<br>Kota : " + parsed.city + "<br>Zona Waktu : " + parsed.time_zone + "<br>latitude : " + parsed.latitude + "<br>longitude : " + parsed.longitude;
     };
     xhttp.send();
 }
