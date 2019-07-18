@@ -87,6 +87,10 @@ nav ul li:hover {
     width: auto;
 }
 
+#kaki {
+    text-align: justify;
+}
+
 @media only screen and (max-width:620px){
     /*buat hp*/
     #header {
