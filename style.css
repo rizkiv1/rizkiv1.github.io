@@ -88,8 +88,8 @@ nav ul li:hover {
 }
 
 #kaki {
-    margin: auto;
     color: white;
+    text-align: center;
 }
 
 @media only screen and (max-width:620px){
